@@ -1,14 +1,15 @@
 import React from 'react';
-import { observer, inject } from 'mobx-react';
-// import MarketTemplate from 'components/Market/MarketTemplate';
+import MainMarketContainer from './MainMarketCotainer';
+import PushMarketContainer from './PushMarketContainer';
 
+const MarketContainer = () => {
 
-const MarketContainer = ({ store }) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <MainMarketContainer/>
+      <PushMarketContainer/>
+    </>
   );
 };
 
-export default inject('store')(observer(MarketContainer));
+export default MarketContainer;

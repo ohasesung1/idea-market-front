@@ -13,6 +13,7 @@
     "js-sha512": "^0.8.0",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",

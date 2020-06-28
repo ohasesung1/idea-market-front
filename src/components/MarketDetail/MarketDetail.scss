@@ -1,0 +1,151 @@
+@import 'styles/color/color_scheme.scss';
+@import 'styles/typography/typography_scheme.scss';
+
+.MarketDetailTemplate {
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  flex-direction: row;
+  width: 1020px;
+  height: 600px;
+  border: 1px solid black;
+
+  &-imageDiv {
+    width: 500px;
+    height: 600px;
+    margin-right: 20px;
+    border: 1px solid black;
+  }
+
+  &-orderDiv {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+
+    &-headerDiv {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #f8f9fa;
+      border: 1px solid black;
+      cursor: pointer;
+
+      &-memberIdDiv {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        width: 140px;
+        height: 30px;
+        cursor: pointer;
+        font-family: $NOTO_SANS_KR_MEDIUM;
+        color: $gray_4;
+      }
+
+      &-iconDiv {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &-icon {
+          width: 100%;
+          height: 100%;
+          color: $gray_4
+        }
+      }
+    }
+
+    &-titleDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $NOTO_SANS_KR_REGULAR;
+      font-size: 20px;
+      width: 100%;
+      height: 80px;
+      border: 1px solid black;
+    }
+
+    &-priceDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      height: 50px;
+      border: 1px solid black;
+
+      &-price {
+        width: 160px;
+        height: 30px;
+        margin-right: 230px;
+        // border: 1px solid black;
+        font-size: 20px;
+        font-family: $NOTO_SANS_KR_BOLD;
+      }
+
+      &-pushDiv {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+      }
+    }
+
+    &-infoDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+      height: 250px;
+      border: 1px solid black;
+
+      &-infoNameDiv {
+        width: 100px;
+        height: 200px;
+        // border: 1px solid black;
+
+        &-nameDiv {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          padding-left: 5px;
+          width: 100%;
+          height: 40px;
+          font-family: $NOTO_SANS_KR_REGULAR;
+          // border: 1px solid black;
+        }
+      }
+
+      &-infoContentsDiv {
+        width: 200px;
+        height: 200px;
+        margin-right: 180px;
+        // border: 1px solid black;
+
+        &-contentsDiv {
+          display: flex;
+          align-items: center;
+          padding-left: 5px;
+          width: 100%;
+          height: 40px;
+          font-family: $NOTO_SANS_KR_REGULAR;
+          // border: 1px solid black;
+        }
+      }
+    }
+
+    &-contactDiv {
+      width: 100%;
+      height: 70px;
+      border: 1px solid black;
+    }
+  }
+}
+
+.ContentsDiv {
+  width: 1020px;
+  height: 600px;
+  border: 1px solid black;
+}

@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import MyInfoTemplate from 'components/MyInfo/MyInfoTemplate';
+import usePending from 'lib/HookState/usePending';
+import { inject, observer } from 'mobx-react';
 
-const MyInfoContainer = () => {
+
+const MyInfoContainer = ({ store }) => {
+  const { getMyInfo, myInfo } = store.myInfoStore;
+  
+  const fetchData =  async () => {
+    await getMyInfo();
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
+  
   return (
-    <div>
-      
-    </div>
+    <MyInfoTemplate myInfo={myInfo}/>
   );
 };
 
-export default MyInfoContainer;
+export default inject('store')(observer(MyInfoContainer));

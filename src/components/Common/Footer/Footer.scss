@@ -1,3 +1,9 @@
-.Footer {
-  
+@import 'styles/color/color_scheme.scss';
+@import 'styles/typography/typography_scheme.scss';
+
+
+.FooterTemplate {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
 }

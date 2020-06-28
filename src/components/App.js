@@ -19,8 +19,13 @@ function App() {
         />
         <Route 
           exact
-          path="my_info"
+          path="/my_info"
           render={() => <Pages.MyInfo/>}
+        />
+        <Route 
+          exact
+          path="/market-detail"
+          render={() => <Pages.MarketDetail/>}
         />
       </Switch>
       <Modal/>

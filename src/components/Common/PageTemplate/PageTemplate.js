@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import { withRouter } from 'react-router-dom';
 import style from './PageTemplate.scss';
 import NevBar from 'components/Common/NevBar';
+import Footer from 'components/Common/Footer';
 
 const cx = classNames.bind(style);
 
@@ -21,6 +22,9 @@ const PageTemplate = ({ url, children, history }) => {
       </div>
       <div className={cx('PageTemplate-contents')}>
         {children}
+      </div>
+      <div className={cx('PageTemplate-bottom')}>
+        <Footer/>
       </div>
     </div>
   );
