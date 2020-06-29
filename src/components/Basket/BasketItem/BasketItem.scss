@@ -1,6 +1,128 @@
+@import 'styles/color/color_scheme.scss';
+@import 'styles/typography/typography_scheme.scss';
+
 .BasketItemTemplate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 300px;
-  margin-top: 20px;
-  border: 1px solid black;
+  min-height: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+
+  &-writerInfoDiv {
+    width: 100%;
+    height: 100px;
+    // border: 1px solid black;
+
+    &-writer {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      padding-left: 10px;
+      font-family: $NOTO_SANS_KR_MEDIUM;
+      height: 50px;
+      // border: 1px solid black;
+    }
+
+    &-joinDate {
+      width: 100%;
+      display: flex;
+      padding-left: 10px;
+      font-family: $NOTO_SANS_KR_MEDIUM;
+      // align-items: center;
+      color: $gray_4;
+      height: 50px;
+      // border: 1px solid black;
+    }
+  }
+
+  &-contentsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 220px;
+    // border: 1px solid black;
+
+    &-imageDiv {
+      width: 200px;
+      height: 100%;
+      // border: 1px solid black;  
+
+      &-viewDiv {
+        width: 150px;
+        height: 150px;
+        margin-left: 30px;
+        // border: 1px solid black;  
+
+        &-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-infoDiv {
+      width: 600px;
+      height: 100%;
+      // border: 1px solid black;  
+
+      &-titleDiv {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 20px;
+        font-family: $NOTO_SANS_KR_MEDIUM;
+        width: 100%;
+        height: 50px;
+        // border: 1px solid black;  
+      }
+
+      &-contents {
+        width: 100%;
+        min-height: 150px;
+        // border: 1px solid black;  
+
+        &-description {
+          cursor: pointer;
+          width: 100%;
+          height: 100px;
+          padding: 10px;
+          font-family: $NOTO_SANS_KR_MEDIUM;
+          // border: 1px solid black;  
+        }
+
+        &-info {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 50px;
+          padding: 10px;
+          font-family: $NOTO_SANS_KR_REGULAR;
+          color: $gray_4;
+          // border: 1px solid black;
+
+          &-contactDiv {
+            margin: auto 0px auto auto;
+            width: 100px;
+            height: 45px;
+            // border: 1px solid black;
+
+            &-button {
+              width: 100%;
+              height: 100%;
+              background-color: #845ef7;
+              border: 0px;
+              outline: 0px;
+              font-family: $NOTO_SANS_KR_MEDIUM;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
 }

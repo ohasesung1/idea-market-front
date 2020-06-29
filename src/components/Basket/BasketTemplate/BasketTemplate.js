@@ -8,9 +8,14 @@ const cx = classnames.bind(style);
 const BasketTemplate = ({ children }) => {
   return (
     <div className={cx('BasketTemplate')}>
-      {
-        children
-      }
+      <div className={cx('BasketTemplate-titleDiv')}>
+        <span>장바구니</span>
+      </div>
+      <div className={cx('BasketTemplate-contentsDiv')}>
+        {
+          children
+        }
+      </div>
     </div>
   );
 };

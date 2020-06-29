@@ -44,9 +44,9 @@ const MarketDetail = ({ item, handleBasket }) => {
               <span>예상 가격:</span>
               <span>{price}원</span>
             </div>
-            <div className={cx('MarketDetailTemplate-orderDiv-priceDiv-pushDiv')}>
+            {/* <div className={cx('MarketDetailTemplate-orderDiv-priceDiv-pushDiv')}>
 
-            </div>
+            </div> */}
           </div>
           <div className={cx('MarketDetailTemplate-orderDiv-infoDiv')}>
             <div className={cx('MarketDetailTemplate-orderDiv-infoDiv-infoNameDiv')}>
