@@ -34,8 +34,7 @@ const MarketItem = ({ item, history }) => {
         }
       </div>
       <div className={cx('MarketItem-titleDiv')}>
-        <span className={cx('MarketItem-titleDiv-category')}>[{category}]</span>
-        <span>{title}</span>
+        <span className={cx('MarketItem-titleDiv-category')}>[{category}] {title}</span>
       </div>
       <div className={cx('MarketItem-pushDiv')}>
         <span>추천수: {push}</span>

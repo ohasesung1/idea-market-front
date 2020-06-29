@@ -1,1 +1,1 @@
-export { default } from './uploadStore';
+export { default } from './UploadStore';

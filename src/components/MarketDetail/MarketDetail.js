@@ -41,8 +41,7 @@ const MarketDetail = ({ item, handleBasket }) => {
           </div>
           <div className={cx('MarketDetailTemplate-orderDiv-priceDiv')}>
             <div className={cx('MarketDetailTemplate-orderDiv-priceDiv-price')}>
-              <span>예상 가격:</span>
-              <span>{price}원</span>
+              <span>예상 가격: {price}원</span>
             </div>
             {/* <div className={cx('MarketDetailTemplate-orderDiv-priceDiv-pushDiv')}>
 
@@ -83,7 +82,7 @@ const MarketDetail = ({ item, handleBasket }) => {
               <button className={cx('MarketDetailTemplate-orderDiv-contactDiv-buttonDiv-button', 'buttonColor')} onClick={() => handleBasket()}>장 바구니 담기</button>
             </div>
             <div className={cx('MarketDetailTemplate-orderDiv-contactDiv-buttonDiv')}>
-              <button className={cx('MarketDetailTemplate-orderDiv-contactDiv-buttonDiv-button')}>연락 하기</button>
+              <button className={cx('MarketDetailTemplate-orderDiv-contactDiv-buttonDiv-button')}>주문 하기</button>
             </div>
           </div>
         </div>

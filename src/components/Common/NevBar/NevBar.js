@@ -82,12 +82,12 @@ const NevBar = ({ url, history, store }) => {
           <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/'})} onClick={() => handleUrl('/')}>
             홈
           </div>
-          <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/best'})} onClick={() => handleUrl('/best')}>
+          {/* <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/best'})} onClick={() => handleUrl('/best')}>
             인기 상품 보기
           </div>
           <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/category'})} onClick={() => handleUrl('/category')}>
             카테고리 별 상품 보기
-          </div>
+          </div> */}
           <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/market-write'})} onClick={() => handleUrl('/market-write')}>
             아이디어 등록 하기
           </div>

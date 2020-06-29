@@ -5,7 +5,61 @@
   width: 1000px;
   height: 800px;
   margin-bottom: 80px;
-  border: 1px solid black;
+  // border: 1px solid black;
+
+  &-optionDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    // border: 1px solid black;
+
+    &-categoryDiv {
+      width: 200px;
+      height: 50px;
+      margin-left: 200px;
+      margin-right: 200px;
+      // border: 1px solid black;
+
+      &-category {
+        width: 100%;
+        height: 100%;
+        outline: 0px;
+        font-family: $NOTO_SANS_KR_MEDIUM;
+      }
+    }
+
+    &-imageUploadDiv {
+      width: 150px;
+      height: 50px;
+      // margin-right: 350px;
+      // border: 1px solid black;
+
+      &-image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-writeButtonDiv {
+      width: 150px;
+      height: 50px;
+      // border: 1px solid black;
+
+      &-button {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        outline: 0px;
+        border: 0px;
+        font-family: $NOTO_SANS_KR_MEDIUM;
+        color: white;
+        background-color: $soda;
+      }
+    }
+  }
 
   &-contentsDiv {
     display: flex;
@@ -14,13 +68,14 @@
     justify-content: center;
     width: 100%;
     height: 200px;
-    border: 1px solid black;
+    // border: 1px solid black;
 
     &-titleDiv {
       display: flex;
       flex-direction: row;
       width: 100%;
-      height: 100%;
+      height: 100px;
+      color: $soda_light;
       // border: 1px solid black;
 
       &-nameDiv {
@@ -31,7 +86,7 @@
         font-family: $NOTO_SANS_KR_MEDIUM;
         width: 300px;
         height: 100%;
-        border: 1px solid black;
+        // border: 1px solid black;
       }
 
       &-contents {
@@ -61,9 +116,10 @@
 
           &-textarea {
             margin-left: 30px;
+            resize: none;
             width: 100%;
             height: 100%;
-            padding-left: 10px;
+            padding: 10px;
             outline: 0px;
             font-family: $NOTO_SANS_KR_MEDIUM;
           }
@@ -74,7 +130,7 @@
     &-descriptionDiv {
       width: 100%;
       height: 100%;
-      border: 1px solid black;
+      // border: 1px solid black;
     }
   }
 }
