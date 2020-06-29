@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { SERVER } from 'config/config.json';
+import TokenVerification from 'lib/Token/TokenVerification';
 
 class MarketRepository {
   async getMarketItemByCategory (page, limit, category) {
@@ -23,6 +24,71 @@ class MarketRepository {
   async getMarketDetail (idx) {
     try {
       const { data } = await axios.get(`${SERVER}/market/detail?idx=${idx}`);
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async writeMarket (request) {
+    const token = TokenVerification() === 'localT' ? localStorage.getItem('idea-market-token') : sessionStorage.getItem('idea-market-token');
+
+    try {
+      const { data } = await axios.post(`${SERVER}/market/`, request, {
+        headers: {
+          'x-access-token' : token, 
+        }
+      });
+      
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async addBasket (marketIdx) {
+    const token = TokenVerification() === 'localT' ? localStorage.getItem('idea-market-token') : sessionStorage.getItem('idea-market-token');
+
+    try {
+      const { data } = await axios.post(`${SERVER}/market/basket`, marketIdx, {
+        headers: {
+          'x-access-token' : token, 
+        }
+      });
+      
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+  
+  async getBaskets () {
+    const token = TokenVerification() === 'localT' ? localStorage.getItem('idea-market-token') : sessionStorage.getItem('idea-market-token');
+
+    try {
+      const { data } = await axios.get(`${SERVER}/market/basket`, {
+        headers: {
+          'x-access-token' : token, 
+        }
+      });
+      
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+    
+  async deleteBasket (idx) {
+    const token = TokenVerification() === 'localT' ? localStorage.getItem('idea-market-token') : sessionStorage.getItem('idea-market-token');
+
+    try {
+      const { data } = await axios.delete(`${SERVER}/market/basket?idx=${idx}`, {
+        headers: {
+          'x-access-token' : token, 
+        }
+      });
+      
       return data;
     } catch (error) {
       throw error;

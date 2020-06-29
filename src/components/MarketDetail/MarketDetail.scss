@@ -8,19 +8,24 @@
   flex-direction: row;
   width: 1020px;
   height: 600px;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   &-imageDiv {
     width: 500px;
-    height: 600px;
+    height: 500px;
     margin-right: 20px;
-    border: 1px solid black;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &-orderDiv {
     width: 500px;
-    height: 500px;
-    border: 1px solid black;
+    height: 480px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+    // border: 1px solid black;
 
     &-headerDiv {
       width: 100%;
@@ -29,7 +34,7 @@
       flex-direction: row;
       align-items: center;
       background-color: #f8f9fa;
-      border: 1px solid black;
+      // border: 1px solid black;
       cursor: pointer;
 
       &-memberIdDiv {
@@ -64,7 +69,7 @@
       font-size: 20px;
       width: 100%;
       height: 80px;
-      border: 1px solid black;
+      // border: 1px solid black;
     }
 
     &-priceDiv {
@@ -74,12 +79,12 @@
       flex-direction: row;
       width: 100%;
       height: 50px;
-      border: 1px solid black;
+      // border: 1px solid black;
 
       &-price {
         width: 160px;
         height: 30px;
-        margin-right: 230px;
+        margin-right: 270px;
         // border: 1px solid black;
         font-size: 20px;
         font-family: $NOTO_SANS_KR_BOLD;
@@ -98,12 +103,12 @@
       justify-content: center;
       flex-direction: row;
       width: 100%;
-      height: 250px;
-      border: 1px solid black;
+      height: 200px;
+      // border: 1px solid black;
 
       &-infoNameDiv {
         width: 100px;
-        height: 200px;
+        height: 160px;
         // border: 1px solid black;
 
         &-nameDiv {
@@ -120,7 +125,7 @@
 
       &-infoContentsDiv {
         width: 200px;
-        height: 200px;
+        height: 160px;
         margin-right: 180px;
         // border: 1px solid black;
 
@@ -137,15 +142,74 @@
     }
 
     &-contactDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 70px;
-      border: 1px solid black;
+      // border: 1px solid black;
+
+      &-buttonDiv {
+        width: 200px;
+        margin: 20px;
+        height: 50px;
+
+        &-button {
+          width: 100%;
+          height: 100%;
+          outline: 0px;
+          border: 0px;
+          font-size: 15px;
+          font-family: $NOTO_SANS_KR_BOLD;
+          background-color: $soda;
+          color: white;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
 
 .ContentsDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1020px;
-  height: 600px;
-  border: 1px solid black;
+  height: 300px;
+  margin-bottom: 100px;
+
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+
+  &-fontStyle {
+    padding-top: 25px;
+    font-size: 15px;
+    font-family: $NOTO_SANS_KR_REGULAR;
+  }
+
+  &-titleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-family: $NOTO_SANS_KR_BOLD;
+    padding-top: 15px;
+    // border: 1px solid black;
+  }
+}
+
+.contentsGuide {
+  width: 1020px;
+  height: 30px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: $NOTO_SANS_KR_BOLD;
+  // border: 1px solid black;
+}
+
+.buttonColor {
+  background-color: #845ef7;
+  // color: #cc5de8;
 }

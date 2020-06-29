@@ -5,12 +5,50 @@ import { inject, observer } from 'mobx-react';
 
 const MarketDetail = ({ store }) => {
 
-  const { getMarketDetail, marketDetail } = store.marketStore;
+  const { getMarketDetail, marketDetail, addBasket } = store.marketStore;
+  const { modal } = store.dialog;
 
   const idx = localStorage.getItem('idea-market-idx');
 
   const fetchData = async () => {
     await getMarketDetail(idx);
+  };
+
+  const handleBasket = async () => {
+    let data = {
+      marketIdx: idx,
+    };
+    await addBasket(data).
+      then(response => {
+        modal({
+          title: 'Success!',
+          stateType: 'success',
+          contents: '장 바구니 추가 성공!!'
+        })
+      }).catch(error => {
+        const { status } = error.response;
+
+        if (status === 400) {
+          modal({
+            title: 'Warning!',
+            stateType: 'warning',
+            contents: '이미 장 바구니에 추가되었습니다.'
+          });
+
+          return;
+        }
+
+        
+        if (status === 500) {
+          modal({
+            title: 'Warning!',
+            stateType: 'warning',
+            contents: '서버 에러.'
+          });
+
+          return;
+        }
+      });
   };
 
   useEffect(() => {
@@ -22,6 +60,7 @@ const MarketDetail = ({ store }) => {
   return (
     <MarketDetailTemplate
       item={marketDetail}
+      handleBasket={handleBasket}
     />
   );
 };

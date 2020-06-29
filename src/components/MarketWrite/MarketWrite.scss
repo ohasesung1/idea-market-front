@@ -1,0 +1,80 @@
+@import 'styles/color/color_scheme.scss';
+@import 'styles/typography/typography_scheme.scss';
+
+.MarketWriteTemplate {
+  width: 1000px;
+  height: 800px;
+  margin-bottom: 80px;
+  border: 1px solid black;
+
+  &-contentsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+
+    &-titleDiv {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      // border: 1px solid black;
+
+      &-nameDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: $NOTO_SANS_KR_MEDIUM;
+        width: 300px;
+        height: 100%;
+        border: 1px solid black;
+      }
+
+      &-contents {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        height: 100%;
+        // border: 1px solid black;
+
+        &-inputDiv {
+          margin-left: 30px;
+          width: 400px;
+          height: 50px;
+
+          &-input {
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+            outline: 0px;
+            font-family: $NOTO_SANS_KR_MEDIUM;
+          }
+        }
+
+        &-textareaDiv {
+          width: 600px;
+          height: 100px;
+
+          &-textarea {
+            margin-left: 30px;
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+            outline: 0px;
+            font-family: $NOTO_SANS_KR_MEDIUM;
+          }
+        }
+      }
+    }
+
+    &-descriptionDiv {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+    }
+  }
+}

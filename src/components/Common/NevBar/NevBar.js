@@ -40,6 +40,16 @@ const NevBar = ({ url, history, store }) => {
       return;
     }
 
+    if (url === '/market-write' && token === 'empty') {
+      await modal({
+        title: 'Warning!',
+        stateType: 'warning',
+        contents: '로그인 후 이용해주세요!'
+      });
+
+      return;
+    }
+
     history.push(url);
   };
 
@@ -63,7 +73,7 @@ const NevBar = ({ url, history, store }) => {
           <span>내 정보</span>
         </div>
         <div className={cx('NevBarTemplate-optionDiv-basketDiv')}>
-          <FaShoppingBasket  className={cx('NevBarTemplate-optionDiv-basketDiv-logo')} />
+          <FaShoppingBasket  className={cx('NevBarTemplate-optionDiv-basketDiv-logo')} onClick={() => handleUrl('/basket')}/>
           <span>장바구니</span>
         </div>
       </div>
@@ -77,6 +87,9 @@ const NevBar = ({ url, history, store }) => {
           </div>
           <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/category'})} onClick={() => handleUrl('/category')}>
             카테고리 별 상품 보기
+          </div>
+          <div className={cx('NevBarTemplate-categoryDiv-itemTemplateDiv-itemDiv', {'itemDivStyle': url === '/market-write'})} onClick={() => handleUrl('/market-write')}>
+            아이디어 등록 하기
           </div>
         </div>
       </div>

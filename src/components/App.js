@@ -27,6 +27,16 @@ function App() {
           path="/market-detail"
           render={() => <Pages.MarketDetail/>}
         />
+        <Route 
+          exact
+          path="/market-write"
+          render={() => <Pages.MarketWrite/>}
+        />
+        <Route 
+          exact
+          path="/basket"
+          render={() => <Pages.Basket/>}
+        />
       </Switch>
       <Modal/>
     </>
