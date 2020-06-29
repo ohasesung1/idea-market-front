@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 브레인 쇼핑몰은 상품을 거래하는 쇼핑몰이 아닌 아이디어를 상품으로 사고 파는 쇼핑몰입니다.
 
-## Available Scripts
+팀: 개인 프로젝트
 
-In the project directory, you can run:
+개발 기간:  약 일주일
 
-### `yarn start`
+개발 인원: 1명
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+개발 분야: 백엔드, 프론트 엔드 (Node.js, React.js)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+GITHUB:  **FrontEnd  [](https://github.com/MDEV-DGSW/DodamDodam_DID_Server)[https://github.com/ohasesung1/idea-market-front](https://github.com/ohasesung1/idea-market-front)**
 
-### `yarn test`
+          **BackEnd [https://github.com/ohasesung1/idea-market-server](https://github.com/ohasesung1/idea-market-server)**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 담당 업무: 백엔드, 프론트 엔드 전체 개발 담당 (기능 명세 참고)
 
-### `yarn build`
+# 개발 기술 스택
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Node.js (Express)**
+2. **Mysql**
+3. **Sequelize**
+4. **React.js**
+5. **Mobx**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# 기능 명세
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **주요** **제품 관련  기능**
+    1. 제품 등록
+    2. 제품 조회
+    3. 제품 장바구니 추가/삭제
+    4. 제품 상세 조회 
+    5. 장바구니 목록 조회
+- **사용자 관련 기능**
+    1. 로그인
+    2. 내 정보 조회
 
-### `yarn eject`
+메인 페이지
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1692b293-c48e-4144-a842-7c099f763497/mainPage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1692b293-c48e-4144-a842-7c099f763497/mainPage.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+제품 상세 조회 페이지
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9d0326c-dd5c-4a4a-8f50-01953b7a45b1/detailPage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9d0326c-dd5c-4a4a-8f50-01953b7a45b1/detailPage.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+장바구니 페이지
 
-## Learn More
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e618ab-3810-4a2d-a97c-330a2da7d9f2/basketPage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50e618ab-3810-4a2d-a97c-330a2da7d9f2/basketPage.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+제품 등록 페이지
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2faaccd-5015-4ea0-828d-2b8bacdd486e/writePage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c2faaccd-5015-4ea0-828d-2b8bacdd486e/writePage.png)
 
-### Code Splitting
+내 정보 페이지
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/216a9d3b-80b5-4344-ba33-249a339e973f/myInfoPage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/216a9d3b-80b5-4344-ba33-249a339e973f/myInfoPage.png)
 
-### Analyzing the Bundle Size
+ 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+로그인 페이지
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c1e082f-688c-4c62-b091-f9d94819a5cb/loginPage.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c1e082f-688c-4c62-b091-f9d94819a5cb/loginPage.png)
